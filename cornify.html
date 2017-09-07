@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="nl">
+    <head>
+        <script type="text/javascript" src="https://www.cornify.com/js/cornify.js"></script>
+        <link rel="stylesheet" type="text/css" href="">
+        <meta charset="utf-8">
+        <title></title> 
+    </head>
+<body> 
+<p id="demo"></p>           
+</body>
+
+
+
+
+<script>
+var array = [""];
+
+document.onkeypress =  function(event){
+
+    var x = event.which || event.keyCode;
+    var z = String.fromCharCode(x);
+
+    array.push(z);
+    var string = array.join("");
+
+    if(string === "unicorn"){
+        cornify_add();
+    }
+}; 
+
+function myFunction(event) {
+
+}
+</script>
+
+</html>
